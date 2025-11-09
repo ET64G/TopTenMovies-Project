@@ -12,12 +12,7 @@ import os
 base_url = os.environ.get('BASE_URL')
 img_base_url = os.environ.get('IMG_BASE_URL')
 
-headers = {
-    "accept": "application/json",
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwOWVjYTNkZmU3M2IzMGQ4ZTAyZGJlYjRiZTMxYmVmZiIsI"
-                     "m5iZiI6MTczNTU5MTM4OC4wMiwic3ViIjoiNjc3MzA1ZGIwZjI0OGU4NTA4MTI5ZWQwIiwic2NvcGVzIjpbIm"
-                     "FwaV9yZWFkIl0sInZlcnNpb24iOjF9.yak8uCBoteb-zSuqtEsX8TNyfj11LUHfYs50PPqyPr8"
-}
+headers = os.environ.get('HEADERS')
 
 # Create the app
 app = Flask(__name__)
